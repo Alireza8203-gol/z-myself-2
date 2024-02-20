@@ -284,9 +284,10 @@ body {
 
 .home {
 	overflow: hidden;
-	height: 90rem;
+	height: 95rem;
 	position: relative;
-	margin-top: 10rem;
+	/* margin-top: 10rem; */
+	padding-top: 10rem;
 }
 
 .home svg {
