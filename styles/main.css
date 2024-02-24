@@ -90,40 +90,37 @@ a {
 	margin: 0;
 	font-family: "poppins-bold";
 	font-size: 4.8rem;
+	text-align: center;
 }
 
 .section-heading__caption {
 	margin: 0;
-	letter-spacing: .3rem;
+	letter-spacing: 0.3rem;
 }
 
 .section-heading__line {
-	position: relative;
 	display: block;
-	margin: 0 auto;
-	margin-top: 3rem;
 	width: 24rem;
+	height: 0.3rem;
+	background-color: var(--primary-color);
+	margin: 0 auto;
+	position: relative;
+	margin-top: 3rem;
 }
 
 .section-heading__line::before {
 	content: "";
 	position: absolute;
-	background-color: var(--primary-color);
-	height: 1.1rem;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
 	width: 3.9rem;
-	border-radius: .6rem;
-	top: -3px;
-	left: 10.5rem;
-}
-
-.section-heading__line::after {
-	content: "";
-	position: absolute;
+	height: 1.1rem;
 	background-color: var(--primary-color);
-	width: 24rem;
-	height: .3rem;
+	border-radius: 0.6rem;
 }
-
 
 /* 
 
@@ -342,7 +339,7 @@ body {
 	overflow: hidden;
 	height: 95rem;
 	position: relative;
-	/* margin-top: 10rem; */
+	margin-bottom: 10rem;
 	padding-top: 10rem;
 }
 
@@ -404,4 +401,87 @@ body {
 	border: 1rem solid var(--bg-secondary);
 	border-radius: 100%;
 	box-shadow: 0px 0px 59px -3px rgba(96, 233, 255, 27%);
+}
+
+/* 
+
+==== Header Menu =====
+
+*/
+
+.about-us-section {
+}
+
+.about-us {
+	display: flex;
+	background-color: var(--bg-secondary);
+	box-shadow: 0px 0px 59px -3px rgba(96, 233, 255, 27%);
+}
+
+.about-us__cover {
+	width: 50%;
+	overflow: hidden;
+}
+
+.about-us__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.about-us__content {
+	width: 50%;
+	padding: 5.5rem 4rem;
+}
+
+.about-us__title {
+	margin: 0;
+	font-size: 2.4rem;
+	margin-bottom: 1.7rem;
+	font-family: "poppins-semibold";
+}
+
+.about-us__description {
+	text-align: justify;
+}
+
+.about-us__list-title {
+	font-size: 1.8rem;
+	margin-top: 7.2rem;
+	margin-bottom: 1.5rem;
+	color: var(--primary-color);
+}
+
+.about-us__list {
+	padding-left: 1.2rem;
+	line-height: 3rem;
+}
+
+.about-us__item {
+	position: relative;
+	padding-left: 3.2rem;
+}
+
+.about-us__item::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 100%;
+	background-color: #f57f17; 					
+}
+
+.about-us__links-wrapper {
+	width: 74%;
+	display: flex;
+	margin-top: 4rem;
+	justify-content: space-between;
+}
+
+.about-us__link {
+	width: 47%;
 }
