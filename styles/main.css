@@ -529,6 +529,7 @@ body {
 */
 
 .services {
+	margin-bottom: 15rem;
 }
 
 .service-card {
@@ -558,4 +559,88 @@ body {
 
 .service-card__description {
 	padding: 0 3.3rem;
+}
+
+/* 
+
+==== Resume =====
+
+*/
+
+.resume {
+	position: relative;
+	background-color: var(--bg-secondary);
+	box-shadow: 0px 0px 81px -3px rgba(19, 182, 255, 24%);
+	transform: skewY(-5deg);
+	padding: 10rem 0;
+}
+
+.resume .container {
+	transform: skewY(5deg);
+}
+
+.resume__side-menu {
+	width: 100%;
+	height: 41.6rem;
+	background-color: var(--bg-primary);
+	position: relative;
+	box-shadow: 0px 0px 59px -3px rgba(96, 233, 255, 27%);
+	z-index: 1;
+}
+
+.resume__rod {
+	width: 4.2rem;
+	height: 100%;
+	background-color: var(--primary-color);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.resume-option-wrapper {
+	padding: 5.4rem 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.resume-option {
+	max-width: 87%;
+	display: flex;
+	position: relative;
+	align-items: center;
+	margin-left: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.resume-option:hover {
+	cursor: pointer;
+}
+
+.resume-option__circle {
+	border-radius: 2.5rem;
+	background-color: var(--primary-color);
+	width: 5rem;
+	height: 5rem;
+	box-shadow: 0px 0px 59px -3px rgba(96, 233, 255, 27%);
+	z-index: -1;
+	position: absolute;
+	transition: all 200ms ease-in;
+}
+
+.resume-option__icon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0.2rem;
+	margin: auto;
+}
+
+.resume-option__title {
+	margin: 0;
+	font-family: "poppins-semibold";
+	font-size: 2rem;
+	margin-left: 6rem;
 }
