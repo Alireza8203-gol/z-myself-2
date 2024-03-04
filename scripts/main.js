@@ -2,7 +2,6 @@ const $ = document;
 let navToggleBtn = $.querySelector(".nav__toggle-icon");
 let navMobileMenu = $.querySelector(".nav__mobile-menu");
 let resOption = $.querySelectorAll(".resume-list__option");
-let resOptionCircles = $.querySelectorAll(".resume-list__circle");
 let isMobileMenuOpen = false;
 
 let toggleMobileMenu = () => {
@@ -19,12 +18,17 @@ let toggleMobileMenu = () => {
 };
 
 resOption.forEach((option) => {
-	option.addEventListener("click", (e) => {
-		e.stopPropagation();
-		let circle = e.target;
-		console.log(circle);
-	}, true);
-	// console.log(option);
+	option.addEventListener("click", function () {
+		let tabId = this.id;
+		let tabsContent = $.querySelectorAll(`#${tabId}`);
+		let activeTab = $.querySelector(".resume-list__option--active")
+		let activeContent = $.querySelector(".resume-content--selected")
+		activeTab.classList.remove("resume-list__option--active");
+		this.classList.add("resume-list__option--active");
+		activeContent.classList.remove("resume-content--selected");
+		tabsContent[1].classList.add("resume-content--selected");
+		// console.log(searchedIds[1]);
+	});
 });
 
 // navToggleBtn.addEventListener("toggle", toggleMobileMenu);

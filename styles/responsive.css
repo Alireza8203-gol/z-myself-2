@@ -96,6 +96,20 @@
 .about-us__links-wrapper {
 	width: 100%;
 }
+
+/* 
+
+==== Resume Section ====
+
+*/
+
+.resume-list__option {
+	margin: 2% 0;
+}
+
+.resume-content {
+	margin-left: 0;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -180,6 +194,14 @@
 .about-us__image {
 	height: 40rem;
 }
+/* 
+
+==== Resume Section ====
+
+*/
+.resume-list {
+	padding: 2.5rem 0;
+}
 }
 
 @media screen and (max-width: 576px) {
@@ -207,8 +229,25 @@
 		margin-bottom: 2rem;
 	}
 }
+
 @media screen and (max-width: 350px) {
 	.home__photo {
 		width: 100%;
 	}
+
+	.resume__tabs {
+		height: auto;
+	}
+
+	.resume-list__title {
+		font-size: 1.9rem;
+	}
+
+	.resume-list__option {
+		margin: 5% 0;
+	}
+
+.resume-list__option--active::before {
+	width: 100%;
+}
 }
