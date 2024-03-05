@@ -7,11 +7,11 @@ let isMobileMenuOpen = false;
 let toggleMobileMenu = () => {
 	navToggleBtn.classList.toggle("nav__toggle--open");
 	if (isMobileMenuOpen) {
-		navMobileMenu.style.left = "-150%";
-		navMobileMenu.style.right = "auto";
+		navMobileMenu.style.right = "-150%";
+		navMobileMenu.style.left = "auto";
 		isMobileMenuOpen = false;
 	} else {
-		navMobileMenu.style.left = "0";
+		navMobileMenu.style.left = "auto";
 		navMobileMenu.style.right = "0";
 		isMobileMenuOpen = true;
 	}

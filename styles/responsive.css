@@ -103,8 +103,51 @@
 
 */
 
+.resume__tabs {
+	min-height: auto;
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.resume-list {
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 2rem;
+	flex-grow: 1;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.resume-list::before {
+	content: none;
+
+}
+
 .resume-list__option {
-	margin: 2% 0;
+	background-color: var(--primary-color);
+	font-size: 1.6rem;
+	margin: 0;
+	height: auto;
+	width: 48%;
+	border-radius: 5rem;
+	padding: 1rem 0;
+	flex-grow: 1;
+}
+
+.resume-list__option::before {
+	content: none;
+}
+
+.resume-list__icon {
+	display: none;
+	
+}
+
+.resume-list__title {
+	padding: 0;
+	width: 100%;
+	text-align: center;
 }
 
 .resume-content {
