@@ -30,8 +30,8 @@ a {
 	text-decoration: none;
 }
 
-.--active {
-	color: var(--primary-color);
+section {
+	margin-bottom: 15rem;
 }
 
 /* 
@@ -73,6 +73,10 @@ a {
 	box-shadow: 0px 16px 28px -3px rgba(245, 127, 23, 24%);
 }
 
+.--active {
+	color: var(--primary-color);
+}
+
 /* 
 	-- Section Heading
 */
@@ -83,7 +87,7 @@ a {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 8.1rem;
+	margin-bottom: 8rem;
 }
 
 .section-heading__title {
@@ -375,7 +379,6 @@ body {
 	overflow: hidden;
 	height: 95rem;
 	position: relative;
-	margin-bottom: 10rem;
 	padding-top: 10rem;
 }
 
@@ -446,7 +449,7 @@ body {
 */
 
 .about-us-section {
-	margin-bottom: 10rem;
+
 }
 
 .about-us {
@@ -530,7 +533,6 @@ body {
 */
 
 .services {
-	margin-bottom: 15rem;
 }
 
 .service-card {
@@ -726,4 +728,81 @@ body {
 .resume-content__caption {
 	margin: 0;
 	font-size: 1.6rem;
+}
+
+/* 
+
+==== Portfolio =====
+
+*/
+
+.portfolio {
+
+}
+
+.portfolio-category {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5.6rem;
+	height: 4.4rem;
+}
+
+.portfolio-category__item {
+	cursor: pointer;
+	transition: all 150ms ease-in;
+}
+
+.portfolio-category__item--active {
+	padding: 1rem 4rem;
+	background-color: var(--primary-color);
+	border-radius: 2.5rem;
+	color: #fff;
+}
+
+.portfolio-slider {
+	margin-top: 4.4rem;
+	overflow: hidden;
+}
+
+.slider-cards__wrapper {
+	display: flex;
+	align-items: center;
+	/* justify-content: space-between; */
+}
+
+.card {
+	margin-right: 5rem;
+}
+
+.card__img {
+
+}
+
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1.7rem;
+}
+
+.pagination__div {
+	display: block;
+	width: 2.4rem;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	border: 4px solid #BFBEBE;
+	fill: #fff;
+}
+
+.middle-label {
+	margin: 0 1rem;
+}
+
+.pagination__div--active {
+	border: 4px solid var(--primary-color);
+}
+
+.pagination__radio {
+	display: none;
 }
