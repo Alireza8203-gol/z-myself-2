@@ -67,6 +67,16 @@
 .about-us__content {
 	padding: 3rem 4rem;
 }
+
+/* 
+
+==== Portfolio Section ====
+
+*/
+
+.portfolio-category__item {
+	font-size: 1.3rem;
+}
 }
 
 @media screen and (max-width: 992px) {
@@ -244,6 +254,16 @@
 */
 .resume-list {
 	padding: 2.5rem 0;
+}
+
+/* 
+
+==== Portfolio Section ====
+
+*/
+
+.portfolio-category {
+	margin-bottom: 15rem;
 }
 }
 
