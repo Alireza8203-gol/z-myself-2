@@ -36,32 +36,6 @@ let toggleMobileMenu = () => {
 	}
 };
 
-// resume section selection mechanism
-// resOption.forEach((option) => {
-// 	option.addEventListener("click", function () {
-// 		let tabId = this.getAttribute("tag");
-// 		let tabsContent = $.querySelector(`#${tabId}`);
-// 		let activeTab = $.querySelector(".resume-list__option--active");
-// 		let activeContent = $.querySelector(".resume-content--selected");
-// 		activeTab.classList.remove("resume-list__option--active");
-// 		this.classList.add("resume-list__option--active");
-// 		activeContent.classList.remove("resume-content--selected");
-// 		tabsContent.classList.add("resume-content--selected");
-// 	});
-// });
-portfolioCategoryItems.forEach((item) => {
-	item.addEventListener("click", function () {
-		let itemTag = this.getAttribute("tag");
-		let tabsContent = $.querySelector(`#${itemTag}`);
-		let activeTab = $.querySelector(".portfolio-category__item--active");
-		let activeContent = $.querySelector(".portfolio-content--show");
-		activeTab.classList.remove("portfolio-category__item--active");
-		item.classList.add("portfolio-category__item--active");
-		activeContent.classList.remove("portfolio-content--show");
-		tabsContent.classList.add("portfolio-content--show");
-	});
-});
-
 // activating the selected tab and its related content
 function tabContentActivator(
 	// the array in which all the tab elements are stored
@@ -90,7 +64,8 @@ function tabContentActivator(
 		});
 	});
 }
-
+// resume section tabs
 tabContentActivator(resOption, "resume-list__option--active", "resume-content--selected")
+// portfolio section tabs
 tabContentActivator(portfolioCategoryItems, "portfolio-category__item--active", "portfolio-content--show")
 navToggleBtn.addEventListener("click", toggleMobileMenu);

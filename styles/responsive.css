@@ -163,6 +163,24 @@
 .resume-content {
 	margin-left: 0;
 }
+
+/* 
+
+==== Pricing Section ====
+
+*/
+
+.plan-card__title {
+	font-size: 3.1rem;
+}
+
+.plan-card__pros-list {
+	font-size: 1.4rem;
+}
+
+.plan-card__btn {
+	width: 80%;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -264,6 +282,16 @@
 
 .portfolio-category {
 	margin-bottom: 15rem;
+}
+
+/* 
+
+==== Pricing Section ====
+
+*/
+
+.plan-card__btn {
+	width: 80%;
 }
 }
 

@@ -794,3 +794,109 @@ body {
 .swiper-pagination-bullet-active {
 	border-color: var(--primary-color);
 }
+
+/* 
+
+==== Pricing Section =====
+
+*/
+
+.pricing {
+	background-color: var(--bg-secondary);
+	box-shadow: 0px 0px 81px -3px rgba(19, 182, 255, 24%);
+	transform: skewY(-5deg);
+	height: auto;
+	padding-top: 10rem;
+	padding-bottom: 18rem;
+}
+
+.pricing .container {
+	transform: skewY(5deg);
+}
+
+.plan-card {
+	max-width: 37rem;
+	/* height: 60rem; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0px 0px 59px -3px rgba(96, 233, 255, 27%);
+	margin: auto;
+}
+
+.plan-card__heading {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	justify-content: center;
+	text-align: center;
+	color: #ffffff;
+	width: 100%;
+	/* padding: 2.5rem 0; */
+	height: 17rem;
+}
+
+.plan-basic {
+	background-color: #ff6331;
+}
+
+.plan-standard {
+	background-color: #803afb;
+}
+
+.plan-premium {
+	background-color: #f5276c;
+}
+
+.plan-card__title {
+	margin: 0;
+	font-family: "poppins-semibold";
+	font-size: 3.6rem;
+}
+
+.plan-card__price-tag {
+	margin: 0;
+	font-family: "poppins-semibold";
+	font-size: 2.4rem;
+	margin-bottom: 1rem;
+}
+
+.plan-card__caption {
+	margin: 0;
+}
+
+.plan-card__pros-list {
+	margin-top: 4.5rem;
+	margin-bottom: 3rem;
+}
+
+.plan-card__pros-items {
+	margin-bottom: 2rem;
+	position: relative;
+}
+.plan-card__pros-items:last-child {
+	margin-bottom: 0;
+}
+
+.plan-card__svg {
+	margin-right: 1rem;
+}
+
+.plan-card__btn {
+	margin-bottom: 4rem;
+}
+
+.plan-card__btn--basic {
+	background-color: #ff6331;
+	box-shadow: 0px 16px 28px -3px rgba(245, 127, 23, 24%);
+}
+
+.plan-card__btn--standard {
+	background-color: #803afb;
+	box-shadow: 0px 16px 28px -3px rgba(128, 58, 251, 24%);
+}
+
+.plan-card__btn--premium {
+	background-color: #f5276c;
+	box-shadow: 0px 16px 28px -3px rgba(245, 39, 108, 24%);
+}
