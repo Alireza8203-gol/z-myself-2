@@ -77,6 +77,20 @@
 .portfolio-category__item {
 	font-size: 1.3rem;
 }
+
+/* 
+
+==== Contact Us Section ====
+
+*/
+
+.contact-us__wrapper {
+	background-position: -25rem;
+}
+
+.contact-us__icon-wrapper {
+	left: 20rem;
+}
 }
 
 @media screen and (max-width: 992px) {
@@ -180,6 +194,32 @@
 
 .plan-card__btn {
 	width: 80%;
+}
+
+/* 
+
+==== Contact Us Section ====
+
+*/
+
+.contact-us__icon-wrapper {
+	display: none;
+}
+
+.contact-us__wrapper {
+	background: none;
+}
+
+.contact-us__form-wrapper {
+	align-items: center;
+}
+
+.contact-us__form {
+	width: 100%;
+	align-items: center;
+}
+
+.contact-us__submit {
 }
 }
 
