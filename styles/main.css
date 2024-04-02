@@ -18,6 +18,7 @@
 	--shadow-color: rgba(19, 182, 255, 0.24);
 	/* *text* */
 	--text: #333333;
+
 }
 
 ul {
@@ -908,7 +909,7 @@ body {
 
 .contact-us {
 	position: relative;
-	margin-bottom: 0;
+	margin-bottom: 2.5rem;
 }
 
 .contact-us__wrapper {
@@ -1005,4 +1006,75 @@ body {
 	cursor: pointer;
 	border: none;
 	width: 100%;
+}
+
+/* 
+
+==== Footer =====
+
+*/
+
+.footer {
+	background-color: var(--bg-primary);
+}
+
+.footer__content-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__copy-right {
+
+}
+
+.copy-right__context {
+	font-family: "poppins-semibold";
+	font-size: 1.8rem;
+	letter-spacing: .8rem;
+	margin: 3.6rem 0;
+}
+
+.footer__icons-wrapper {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.footer__social-icon {
+	background-color: #333333;
+	border-radius: 50%;
+	width: 4.5rem;
+	height: 4.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 1.5rem;
+	text-decoration: none;
+	transition: all 200ms ease-in;
+}
+
+.footer__social-icon:last-child {
+	margin-right: 0;
+}
+
+.footer__social-icon svg {
+	fill: var(--bg-primary);
+}
+
+.footer__social-icon:hover {
+	background-color: var(--primary-color);
+	transition: all 200ms ease-in;
+}
+
+.dribble {
+	margin: .5rem;
+}
+
+.pintrest {
+	margin: .9rem;
+}
+
+.skype {
+	margin: .6rem;
 }
