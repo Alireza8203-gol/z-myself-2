@@ -18,7 +18,32 @@
 	--shadow-color: rgba(19, 182, 255, 0.24);
 	/* *text* */
 	--text: #333333;
+}
 
+:root.dark-theme {
+	--primary-color: #0abead;
+	--secondary-color: #f57f17;
+	/*  *Background color* */
+	--bg-primary: #161d26;
+	--bg-secondary: #1f2935;
+	/*  *Drop Shadow* */
+	--shadow-color: rgba(19, 182, 255, 0.24);
+	/* *text* */
+	--text: #95a5c6;
+}
+
+:root.dark-theme .header,
+:root.dark-theme .home__photo,
+:root.dark-theme .about-us__wrapper,
+:root.dark-theme .resume,
+:root.dark-theme .resume__tabs,
+:root.dark-theme .pricing,
+:root.dark-theme .plan-card {
+	box-shadow: none;
+}
+
+:root.dark-theme .nav__mobile-menu {
+	background: rgb(22 29 38 / 90%);
 }
 
 ul {
@@ -146,26 +171,31 @@ section {
 	box-shadow: 0px 0px 59px -3px rgba(118, 13, 255, 35%);
 	background-image: url("../images/svg/services-bg-purple.svg");
 }
+
 .--yellow {
 	background-color: #ffc50c;
 	box-shadow: 0px 0px 59px -3px rgba(255, 197, 12, 35%);
 	background-image: url("../images/svg/services-bg-yellow.svg");
 }
+
 .--pink {
 	background-color: #ec407a;
 	box-shadow: 0px 0px 59px -3px rgba(236, 64, 122, 35%);
 	background-image: url("../images/svg/services-bg-pink.svg");
 }
+
 .--redish {
 	background-color: #ff6331;
 	box-shadow: 0px 0px 59px -3px rgba(255, 99, 49, 35%);
 	background-image: url("../images/svg/services-bg-redish.svg");
 }
+
 .--light-blue {
 	background-color: #13b6ff;
 	box-shadow: 0px 0px 59px -3px rgba(19, 182, 255, 35%);
 	background-image: url("../images/svg/services-bg-light-blue.svg");
 }
+
 .--green {
 	background-color: #49af46;
 	box-shadow: 0px 0px 59px -3px rgba(73, 175, 70, 35%);
@@ -274,6 +304,7 @@ body {
 
 .nav__mobile-menu {
 	--primary-color: rgb(10, 190, 173, 0.06);
+	--bg-primary: rgb(255 255 255 / 20%);
 	display: none;
 	position: absolute;
 	width: 100%;
@@ -282,7 +313,7 @@ body {
 	top: 12.5vh;
 	text-align: center;
 	/* From https://css.glass */
-	background: rgba(255, 255, 255, 0.66);
+	background: var(--bg-primary);
 	border-bottom-left-radius: 1.6rem;
 	border-bottom-right-radius: 1.6rem;
 	backdrop-filter: blur(8px);
@@ -292,7 +323,7 @@ body {
 }
 
 .nav__mobile--open .nav__mobile-menu {
-	display: block !important	;
+	display: block !important;
 }
 
 .mobile-menu {
@@ -327,12 +358,12 @@ body {
 .nav__toggle-line,
 .nav__toggle-line::before,
 .nav__toggle-line::after {
-	content: "";
-	width: 4rem;
-	height: 0.4rem;
-	background-color: var(--primary-color);
-	border-radius: 1rem;
-	transition: all 200ms ease;
+    content: "";
+    width: 4rem;
+    height: 0.4rem;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    transition: all 200ms ease;
 }
 
 .nav__toggle-line::before {
@@ -436,6 +467,7 @@ body {
 
 .about-us__wrapper {
 	display: flex;
+	flex-wrap: wrap;
 	background-color: var(--bg-secondary);
 	box-shadow: 0px 0px 59px -3px rgba(96, 233, 255, 27%);
 }
@@ -574,6 +606,7 @@ body {
 	min-height: 35rem;
 }
 
+/*todo fix the colors of this part in dark mode*/
 .resume-list {
 	position: relative;
 	height: 100%;
@@ -854,6 +887,7 @@ body {
 	margin-bottom: 2rem;
 	position: relative;
 }
+
 .plan-card__pros-items:last-child {
 	margin-bottom: 0;
 }
@@ -1004,7 +1038,7 @@ body {
 .copy-right__context {
 	font-family: "poppins-semibold";
 	font-size: 1.8rem;
-	letter-spacing: .8rem;
+	letter-spacing: 0.8rem;
 	margin: 3.6rem 0;
 }
 
@@ -1014,7 +1048,8 @@ body {
 	justify-content: flex-end;
 }
 
-.footer__social-icon {
+.footer__social-icon,
+.change-theme {
 	background-color: #333333;
 	border-radius: 50%;
 	width: 4.5rem;
@@ -1025,6 +1060,7 @@ body {
 	margin-right: 1.5rem;
 	text-decoration: none;
 	transition: all 200ms ease-in;
+	cursor: pointer;
 }
 
 .footer__social-icon:last-child {
@@ -1035,19 +1071,24 @@ body {
 	fill: var(--bg-primary);
 }
 
+.change-theme svg {
+	fill: #ffffff;
+}
+
 .footer__social-icon:hover {
 	background-color: var(--primary-color);
 	transition: all 200ms ease-in;
 }
 
-.dribble {
-	margin: .5rem;
+.dribble,
+.change-theme svg {
+	margin: 0.5rem;
 }
 
 .pintrest {
-	margin: .9rem;
+	margin: 0.9rem;
 }
 
 .skype {
-	margin: .6rem;
+	margin: 0.6rem;
 }
